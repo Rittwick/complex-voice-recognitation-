@@ -9,5 +9,6 @@ class PhrasalVerb(models.Model):
 class Example(models.Model):
     id = models.IntegerKey()
     verb = models.ForeignKey(PhrasalVerb, on_delete=models.CASCADE)
+    date = models.DateField()
     sentence = models.CharField(max_length=300)
 
